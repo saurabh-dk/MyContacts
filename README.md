@@ -28,15 +28,15 @@ To stop the docker compose and database server.
 
 ### Easiest way to make the server process the concurrent requests is to use connctection pool.
 
-    ```
-    pool : {
-    	max : 100,
-    	min : 0,
-    	acquire: 10000,
-    	idle: 5000,
-    }
-    ```
+```
+pool : {
+	max : 100,
+	min : 0,
+	acquire: 10000,
+	idle: 5000,
+}
+```
 
 ### Transactions
 
-    If the server is concurrent, implementing Transactions ensures that there is no race condition and conflict while accessing and modifying the database.
+If the server is concurrent, implementing Transactions ensures that there is no race condition and conflict while accessing and modifying the database.
